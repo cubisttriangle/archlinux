@@ -1,0 +1,52 @@
+# Window Manager
+
+  dwm
+
+# Location
+
+  ~/code/window_managers/dwm
+
+# Starting dwm, when LightDm is broken
+
+  start dwm with `startx`
+
+# Launching/Killing
+
+  [Shift]+[Alt]+[Enter] - launch terminal
+  [Alt]+[p] - launch dmenu
+  [Shift]+[Alt]+[c] - kill current window
+  [Shift]+[Alt]+[q] - cleanly exit dwm
+
+# Monitors
+
+  [Alt]+[,] - move focus to left monitor
+  [Alt]+[.] - move focus to right monitor
+  [Alt]+[Shift]+[,] - move window to left monitor
+  [Alt]+[Shift]+[.] - move window to right monitor
+
+# Navigation
+
+  [Alt]+[j] - move to left/up window
+  [Alt]+[k] - move to right/down window
+  [Alt]+[h] - move window inner border right
+  [Alt]+[l] - move window inner border left
+
+# Tags
+
+  [Alt]+[tag] - move focus to [tag]
+  [Alt]+[d] - decrease amount of windows in master area
+  [Alt]+[i] - increase amount of windows in master area
+  [Alt]+[Return] - toggle window between master and stack (move window right or left)
+
+# Switch the left/right monitor
+
+  $ xrandr --listmonitors
+    Monitors: 2
+     0: +DisplayPort-1 3840/697x2160/392+3840+0  DisplayPort-1
+     1: +DisplayPort-2 3840/697x2160/392+0+0  DisplayPort-2
+  
+  $ xrandr --output DisplayPort-2 --left-of DisplayPort-1
+
+# Adjust keyboard autorepeat ('typematic delay'): `man xset`
+
+  set r rate 150 25
